@@ -16,7 +16,7 @@ const usuario2 = ref(false);
 const senhaErro = ref('');
 
 function confirmasenha (){
-  if(senha.value ==  senha2.value)
+  if(senha.value ==  senhaConfirma.value)
   senhaErro.value = "";
   return true;
 }
@@ -27,7 +27,7 @@ function confirmasenha (){
 </script>
 <template> 
      <div class="div1">
-        <form @submit.prevent="usuario2=confirma()" class="formulario">
+        <form @submit.prevent="usuario2=confirmasenha()" class="formulario">
           <div class="menu">
           <p>Nome: </p><input v-model="nome" placeholder="Nome" minlength="3" maxlength="20" required />
           <p>Email: </p><input type="email" v-model="email" placeholder="Email" required />
@@ -71,6 +71,7 @@ function confirmasenha (){
           <p>Linguagens de programação: </p><textarea v-model="lingProg" cols="20" rows="5"></textarea>
           <p>Biografia: </p><textarea v-model="bio" cols="20" rows="5"></textarea>
           <button type="submit" class="button">Enviar</button>
+          <p>{{ senhaErro }}</p>
         </div>
       </form> 
       
@@ -81,13 +82,13 @@ function confirmasenha (){
           <p>Nome: {{ nome }}</p>
           <p>Email: {{ email }}</p>
           <p>Senha: {{ senha }}</p>
-          <p>Data de nascimento: {{ nascimento }}</p>
-          <p>Endereço: {{ endereco }}</p>
+          <p>Data de nascimento: {{ dataNasc}}</p>
+          <p>Endereço: {{ endereço }}</p>
           <p>Cidade: {{ cidade }}</p>
           <p>Estado: {{ estados }}</p>
           <p>Hobbies: {{ hobbies }}</p>
           <p>Linguagens de programação: {{ lingProg }}</p>
-          <p>Biografia: {{ bio }}</p>
+          <p>Biografia: {{ biografia }}</p>
         </div>
         
       </div>
