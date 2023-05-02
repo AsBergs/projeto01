@@ -32,13 +32,13 @@ function confirmasenha (){
           <p>Nome: </p><input v-model="nome" placeholder="Nome" minlength="3" maxlength="20" required />
           <p>Email: </p><input type="email" v-model="email" placeholder="Email" required />
           <p>Senha: </p><input type="password" v-model="senha" required />
-          <p>Confirmação de senha: </p><input type="password" v-model="senha2" required />
-          <p>Nascimento: </p><input type="date" name="Data nascimento" id="nascimento" v-model="nascimento"> 
-          <p>Endereço: </p><input type="text" v-model="endereco" required />
+          <p>Confirmação de senha: </p><input type="password" v-model="senhaConfirma" required />
+          <p>Nascimento: </p><input type="date" name="Data nascimento" id="dataNasc" v-model="dataNasc"> 
+          <p>Endereço: </p><input type="text" v-model="endereço" required />
           <p>Cidade: </p><input type="text" v-model="cidade" required />
          
           
-          <p>Estado: </p><select v-model="estados">
+          <p>Estado: </p><select v-model="estado">
             <option value=" Acre">AC</option>
             <option value="Alagoas">AL</option>
             <option value="Amapá">AP</option>
@@ -85,7 +85,7 @@ function confirmasenha (){
           <p>Data de nascimento: {{ dataNasc}}</p>
           <p>Endereço: {{ endereço }}</p>
           <p>Cidade: {{ cidade }}</p>
-          <p>Estado: {{ estados }}</p>
+          <p>Estado: {{ estado }}</p>
           <p>Hobbies: {{ hobbies }}</p>
           <p>Linguagens de programação: {{ lingProg }}</p>
           <p>Biografia: {{ biografia }}</p>
