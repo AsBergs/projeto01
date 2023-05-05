@@ -77,7 +77,7 @@ function confirmasenha() {
     <div v-if="confirmarUsuario" class="formulario2">
 
       <div class="usuario">
-        <p>Usúario</p>
+        <h1>Usuario</h1>
         <p>Nome: {{ nome }}</p>
         <p>Email: {{ email }}</p>
         <p>Senha: {{ senha }}</p>
@@ -100,20 +100,26 @@ function confirmasenha() {
   background-color: #0E4459;
   width: 350px;
   border-radius: 20px;
- margin-left: 20%;
+  margin-left: 0%;
+  
+  
 }
 
 .formulario2 {
   color: rgb(144, 196, 242);
   background-color: #0E4459;
   border-radius: 20px;
- margin-right: 30px;
-
+  margin-right: 30px;
+  margin-bottom: 0%;
   margin-left: 130px;
+  width: 400px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 
 .menu {
   margin: 50px 50px 50px 90px;
+  
 
 }
 
@@ -133,13 +139,23 @@ function confirmasenha() {
 
 
 .usuario {
-  color: rgb(12, 217, 245);
-  background-color: #0E4459;
+ color: rgb(12, 217, 245);
+ background-color: #0E4459;
  margin-top: 10%;
  margin-left: 10%;
- margin-right: 10%;
+ margin-right: 20%;
+ width: 300px;
+
 
 }
+h1{
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+
+
+
 </style>
 
 
